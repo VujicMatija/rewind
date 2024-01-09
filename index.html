@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REWIND</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+
+    <div class = 'prvi'>
+        <p class="naslov">REWIND</p>
+        <img class="logo" src="/imgs/logo.png" alt="logo">
+    </div>  
+   
+    <div class="drugi">
+        <img src="/imgs/ucenje1.png" alt="slika1">
+        <p class="citat">Učio si za ispite ali ne znaš kako da proveriš svoje znanje? <br> REWIND ima savršeno rešenje za tebe uz koje možeš biti siguran da si spremio ispit!</p>
+    </div>
+
+    <div class="treci">
+        <p  class="citat bela">Priloži gradivo koje si naučio i mi cemo ti dati pitanja sa kojima možes da proveriš svoje znanje</p>
+        <div class="pitanja">
+            <textarea class="input" name="input" id="input" cols="70" rows="30"></textarea>
+            <input class = "dugme" type="button" value="Pitanja!" id="btn" name="dugme">
+            <textarea class="output" name="output" id="output" cols="70" rows="30"></textarea>
+        </div>
+    </div>
+
+    <div class="cetvrti">
+        <p class="citat2">O REWINDu su rekli</p>
+        <div class="utisci">
+            <input type="button" value="Prethodni" id="Prethodni" class='dgm'>
+            <img src="imgs/katarina.jpg" alt="osoba" id='slika' class='slika'>
+            <p class="utisak" id = 'utisak'>REWIND mi je zasluzan za to sto sam polozila ekonomiju, da nije bilo njega ne znam sta bi radila <br> - Katarina Damnjanovic</p>
+            <input type="button" value="Sledeci" id="sledeci" class="dgm">
+            
+        </div>
+    </div>
+    <div class="peti">
+        <div class="pomocni">
+            <p class="citat2">REWIND sluzi svim studentima kako bi pomogao prilikom ucenja. Ako imas bilo kakvu ideju kako moze da se unapredi slobodno nam pisi preko forme. </p>  
+            <img class="ucenje2" src="imgs/ucenje2.png" alt="ucenje2">
+        </div>
+      <div class="forma">
+        <form action="">
+            <textarea class="feedback" id="feedback" name="poruka" placeholder="Tvoj feedback nam je veoma bitan" id="" cols="90" rows="40"></textarea>
+        </form>
+        <input type="button" id="emailSender" value="Posalji" class="submit">
+    </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('hgIioMlc_FLlgvkce')
+      </script>
+    
+</body>
+</html>
